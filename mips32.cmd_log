@@ -1,0 +1,48 @@
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z020-clg484-3 mips32.ngc mips32.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z020-clg484-3 mips32.ngc mips32.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+par -w -intstyle ise -ol high -mt off mips32_map.ncd mips32.ncd mips32.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mips32.twx mips32.ncd -o mips32.twr mips32.pcf 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z020-clg484-3 mips32.ngc mips32.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim mips32.ngc mips32_synthesis.v 
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z020-clg484-3 mips32.ngc mips32.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+vhdtdtfi -lib work E:/RISC32/mips32/mips32.v -lang verilog -prj mips32 -o mips32.spl -module mips32 -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq mips32.spl E:/RISC32/mips32/mips32.sym 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z020-clg484-3 mips32.ngc mips32.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips32_map.ncd mips32.ngd mips32.pcf 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-4 mips32.ngc mips32.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o mips32_map.ncd mips32.ngd mips32.pcf 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+xst -intstyle ise -ifn "E:/RISC32/mips32/mips32.xst" -ofn "E:/RISC32/mips32/mips32.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-4 mips32.ngc mips32.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o mips32_map.ncd mips32.ngd mips32.pcf 
