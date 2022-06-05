@@ -1,8 +1,0 @@
-[Inputs]
-clk1
-clk2
-[Outputs]
-[BiDir]
-[ATTRIBUTES]
-VeriModel mips32
-
